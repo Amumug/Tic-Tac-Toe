@@ -14,7 +14,7 @@ export default function GameBoard({onSelectSquare, turns}) {
     const {row, col} = square
 
     gameBoard[col][row] = player
-  }
+  };
 
 
   return (
