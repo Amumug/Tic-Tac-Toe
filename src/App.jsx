@@ -25,7 +25,7 @@ function deriveActivePlayer(gameTurns) {
   }
 
   return currentPlayer;
-}
+};
 
 function deriveGameBoard(gameTurns) {
   let gameBoard = [...INITIAL_GAME_BOARD.map((array) => [...array])];
@@ -37,7 +37,7 @@ function deriveGameBoard(gameTurns) {
     gameBoard[col][row] = player;
   }
   return gameBoard;
-}
+};
 
 function deriveWinner(gameBoard, players) {
   let winner;
@@ -59,7 +59,7 @@ function deriveWinner(gameBoard, players) {
     }
   }
   return winner;
-}
+};
 function App() {
   const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
